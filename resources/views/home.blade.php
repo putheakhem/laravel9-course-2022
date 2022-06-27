@@ -1,13 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
-</head>
-<body>
-    <h1>Laravel 9 Course</h1>
-</body>
-</html>
+{{--@extends('layouts.master')--}}
+
+
+{{--@section('title', 'Home Page')--}}
+
+{{--@section('content')--}}
+
+{{--<h1 class="text-3xl text-blue-500 font-bold">Welcome to Home Page</h1>--}}
+{{--<p class="text-justify font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci animi at delectus doloremque dolorum--}}
+{{--    eaque ex harum id itaque, iure laudantium minima neque quam quod soluta voluptate voluptates voluptatum.</p>--}}
+{{--@endsection--}}
+
+
+<x-main>
+    <x-slot:title>
+        Home Page
+    </x-slot:title>
+
+    <h1>Welcome to Home Page</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta earum hic id illo magni modi natus necessitatibus
+        omnis, quis velit! Aliquam doloremque fugiat inventore odit quod suscipit vel voluptatem? Ipsam!</p>
+</x-main>
