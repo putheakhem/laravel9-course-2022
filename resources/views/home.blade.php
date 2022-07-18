@@ -13,9 +13,8 @@
 
 <x-main>
     <x-slot:title>
-        Home Page
-    </x-slot:title>
-
+        Custom Title
+        </x-slot>
     <h1>Welcome to Home Page</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta earum hic id illo magni modi natus necessitatibus
         omnis, quis velit! Aliquam doloremque fugiat inventore odit quod suscipit vel voluptatem? Ipsam!</p>
