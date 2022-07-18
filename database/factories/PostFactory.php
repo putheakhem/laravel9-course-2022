@@ -17,7 +17,11 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => fake()->name(),
+            'content' => fake()->realText(),
+            'slug' => fake()->slug(),
+            'created_at' => fake()->dateTime(),
+            'updated_at' => fake()->dateTime(),
         ];
     }
 }

@@ -15,20 +15,10 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-
         DB::table('posts')->insert([
-            'author' => 'Puthea',
-            'title' => "Upgrade Laravel 8 to 9",
-            'content' => "This command publishes the authentication views, routes",
-            'slug' => 'upgrade-larave-8-to-9'
+            'title' => 'New Post',
+            'content' => 'my content',
+            'slug' => 'my-first-post',
         ]);
-
-        DB::table('posts')->insert([
-            'author' => 'Puthea',
-            'title' => "Upgrade Laravel 9 to 10",
-            'content' => "This command publishes the authentication views, routes, controllers, and other resources to your application. Laravel Breeze publishes all of its code to your application so that you have full control and visibility over its features and implementation.",
-            'slug' => 'upgrade-larave-8-to-9'
-        ]);
-
     }
 }
