@@ -26,7 +26,7 @@ class PostController extends Controller
     }
 
     public function store(Request $request) {
-      $post = new Post();
+      $post = new Post();x
       $post->title = $request->title;
       $post->content = $request->content;
       $post->slug = $request->slug;
@@ -47,7 +47,7 @@ class PostController extends Controller
         return redirect('posts');
     }
 
-    public function delete(Post $post) {
-
+    public function destroy(Post $post) {
+        return redirect('posts');
     }
 }
