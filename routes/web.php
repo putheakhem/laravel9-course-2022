@@ -18,7 +18,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/posts', [PostController::class, 'index']);
+//Route::get('/posts', [PostController::class, 'index']);
+//Route::get('/posts/create', [PostController::class, 'create']);
+//Route::post('/posts/store', [PostController::class, 'store']);
+
+Route::resource('posts', PostController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
