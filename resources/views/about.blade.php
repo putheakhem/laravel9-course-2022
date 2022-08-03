@@ -1,116 +1,195 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-<!-- This example requires Tailwind CSS v2.0+ -->
-<nav class="bg-gray-800">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between h-16">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <!-- Mobile menu button-->
-                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <!--
-                      Icon when menu is closed.
+@extends('layouts.master')
 
-                      Heroicon name: outline/menu
 
-                      Menu open: "hidden", Menu closed: "block"
-                    -->
-                    <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    <!--
-                      Icon when menu is open.
+@section('content')
+    <!--/breadcrumb-bg-->
+    <div class="breadcrumb-bg w3l-inner-page-breadcrumb py-5">
+        <div class="container pt-lg-5 pt-md-3 p-lg-4 my-lg-3">
+            <ul class="breadcrumbs-custom-path pt-5 mt-4 text-center">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> About </li>
+            </ul>
+        </div>
+    </div>
+    <!--//breadcrumb-bg-->
+    <!-- //w3l-inner-page-breadcrumb-->
+    <section class="w3l-about-ab" id="about">
+        <div class="midd-w3 py-5">
+            <div class="container py-lg-5 py-md-4 py-2">
+                <div class="row">
+                    <div class="col-lg-4 left-wthree-info align-self">
+                        <h6 class="title-subhny">About Me</h6>
+                        <h3 class="title-w3l mb-4"><span>I'm a Passionate</span> designer & developer</h3>
+                        <p class="">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                            ultrices in ligula. Semper at tempufddfel consectetur adipisicing dolor amet tempufddfel.</p>
+                        <p class="mt-3">Pellen
+                            tesque libero ut justo, ultrices in ligula. Semper at
+                            tempufddfel. Learn more about our work! Lorem ipsum viverra feugiat.</p>
+                        <div class="about-pic-info mt-4">
+                            <h4> Follow Me</h4>
 
-                      Heroicon name: outline/x
-
-                      Menu open: "block", Menu closed: "hidden"
-                    -->
-                    <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="flex-shrink-0 flex items-center">
-                    <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
-                    <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg" alt="Workflow">
-                </div>
-                <div class="hidden sm:block sm:ml-6">
-                    <div class="flex space-x-4">
-                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                        <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
-
-                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
-
-                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-
-                        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+                            <div class="social-column-3 social-column-2 mt-3">
+                                <a href="#" target="_blank" class="twitter">
+                                    <span class="fa fa-twitter mr-2"></span>
+                                    <span class="social-text">Twitter</span>
+                                </a>
+                                <a href=" #" target="_blank" class="facebook">
+                                    <span class="fa fa-facebook mr-2"></span>
+                                    <span class="social-text">Facebook</span>
+                                </a>
+                            </div>
+                        </div>
+                        </p>
                     </div>
-                </div>
-            </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button type="button" class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                    <span class="sr-only">View notifications</span>
-                    <!-- Heroicon name: outline/bell -->
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                    </svg>
-                </button>
-
-                <!-- Profile dropdown -->
-                <div class="ml-3 relative">
-                    <div>
-                        <button type="button" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                            <span class="sr-only">Open user menu</span>
-                            <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                        </button>
+                    <div class="col-lg-4 left-wthree-info px-lg-5 mt-lg-0 mt-5">
+                        <h6 class="title-subhny">Education & Job</h6>
+                        <h3 class="title-w3l mb-4"><span>My</span> Experience</h3>
+                        <p>Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Learn more about our work!
+                            Lorem ipsum viverra feugiat.</p>
+                        <div class="left-wthree-img-inf mt-4">
+                            <h4 class="title">
+                                Lead Web Developer </h4>
+                            <p>Company Ltd.</p>
+                        </div>
+                        <div class="left-wthree-img-inf mt-4">
+                            <h4 class="title">
+                                Senior Web Developer </h4>
+                            <p>Company Ltd.</p>
+                        </div>
+                        <div class="left-wthree-img-inf mt-4">
+                            <h4 class="title">
+                                Lead Web Developer </h4>
+                            <p>Company Ltd.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 left-wthree-img mt-lg-0 mt-md-5 mt-4">
+                        <img src="assets/images/person1.jpg" alt="" class="radius-image img-fluid">
                     </div>
 
-                    <!--
-                      Dropdown menu, show/hide based on menu state.
-
-                      Entering: "transition ease-out duration-100"
-                        From: "transform opacity-0 scale-95"
-                        To: "transform opacity-100 scale-100"
-                      Leaving: "transition ease-in duration-75"
-                        From: "transform opacity-100 scale-100"
-                        To: "transform opacity-0 scale-95"
-                    -->
-                    <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                        <!-- Active: "bg-gray-100", Not Active: "" -->
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /w3l-content-2-->
+    <!-- services page services section -->
+    <section class="w3l-services" id="vision">
+        <div class="midd-w3 py-5">
+            <div class="container py-lg-5 py-md-3 py-2">
+                <div class="row">
+                    <div class="col-lg-6 mb-lg-0 mb-md-5 mb-5 align-self">
+                        <h6 class="title-subhny">See How</h6>
+                        <h3 class="title-w3l mb-4"><span>Provide smart and flexible </span> digital services</h3>
+                        <p class="mt-md-4 mt-3">Learn more about our work! Lorem ipsum viverra feugiat.Pellen tesque libero ut
+                            justo, ultrices in ligula. Semper at tempufddfel. Learn more about our work! Lorem ipsum viverra feugiat.
+                        </p>
+                        <p class="mt-3 mb-lg-5 mb-4">Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Learn
+                            more about our work! Lorem ipsum viverra feugiat.</p>
+                        <a class="btn btn-primary btn-style mr-2" href="#">Read More</a>
+                        <a class="btn btn-primary btn-outline" href="contact.html">Contact Me</a>
+                    </div>
+                    <div class="col-lg-6 align-self-center pl-lg-5">
+                        <div class="row features4-grids">
+                            <div class="col-6 mt-4">
+                                <div class="features4-grid">
+                                    <div class="feature-images area-icon icon-orange">
+                                        <span class="fa fa-search-plus" aria-hidden="true"></span>
+                                    </div>
+                                    <h5><a href="#about">Research</a></h5>
+                                </div>
+                            </div>
+                            <div class="col-6  mt-4">
+                                <div class="features4-grid">
+                                    <div class="feature-images area-icon icon-purple">
+                                        <span class="fa fa-lightbulb-o" aria-hidden="true"></span>
+                                    </div>
+                                    <h5><a href="#about">Idea & Concept</a></h5>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-4">
+                                <div class="features4-grid">
+                                    <div class="feature-images area-icon icon-green">
+                                        <span class="fa fa-linode" aria-hidden="true"></span>
+                                    </div>
+                                    <h5><a href="#about"> Development</a></h5>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-4">
+                                <div class="features4-grid">
+                                    <div class="feature-images area-icon icon-yellow">
+                                        <span class="fa fa-thumbs-up" aria-hidden="true"></span>
+                                    </div>
+                                    <h5><a href="#about">Testing & Support</a></h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- //services page services section -->
+    <!--/w3l-circles-->
+    <section class="w3l-circles" id="stats">
+        <div class="midd-w3 py-5">
+            <div class="container py-lg-5 py-md-3 py-2">
+                <div class="title-content text-left">
+                    <h6 class="title-subhny">My Skills</h6>
+                    <h3 class="title-w3l mb-sm-5 mb-4 pb-lg-2"> <span>Coding</span>
+                        Skills</h3>
+                </div>
+                <div class="row circle-grids">
 
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Dashboard</a>
+                    <div class="col-lg-6 position-relative pl-lg-0">
+                        <div class="progress-circles">
+                            <div class="circle1">
+                                <div id="progress" data-dimension="160" data-text="95%" data-fontsize="32" data-percent="95"
+                                     data-fgcolor="#f3525a" data-bgcolor="#eee" data-width="15" data-bordersize="5" data-animationstep="2">
+                                </div>
+                                <h4>HTML / CSS</h4>
+                            </div>
+                            <div class="circle1">
+                                <div id="progress1" data-dimension="160" data-text="75%" data-fontsize="32" data-percent="75"
+                                     data-fgcolor="#00d280" data-bgcolor="#eee" data-width="15" data-bordersize="5" data-animationstep="2">
+                                </div>
+                                <h4>PHP</h4>
+                            </div>
+                            <div class="circle1">
+                                <div id="progress2" data-dimension="160" data-text="85%" data-fontsize="32" data-percent="85"
+                                     data-fgcolor="#ffb700" data-bgcolor="#eee" data-width="15" data-bordersize="5" data-animationstep="2">
+                                </div>
+                                <h4>JavaScript</h4>
+                            </div>
+                            <div class="circle1">
+                                <div id="progress3" data-dimension="160" data-text="70%" data-fontsize="32" data-percent="70"
+                                     data-fgcolor="#6610f2" data-bgcolor="#eee" data-width="15" data-bordersize="5" data-animationstep="2">
+                                </div>
+                                <h4>Smarty / Twig</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 circle-img-right mt-lg-0 mt-5 pl-lg-5 p-lg-4">
+                        <img src="assets/images/banner1.jpg" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
 
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+            </div>
+        </div>
+    </section>
+    <!--//w3l-circles-->
+    <!-- middle -->
+    <div class="middle py-5">
+        <div class="container py-lg-5 py-md-4">
+            <div class="welcome-left text-center">
+                <h6 class="title-subhny">Hello</h6>
+                <h3 class="title-w3l mb-4 mx-0 mw-100"> <span>I Can give your business a new Creative </span>
+                    start right away!</h3>
+                <p class="pr-lg-5">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                    tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="buttons mt-md-5 mt-4">
+                    <a class="btn btn-primary btn-style mr-2" href="#">Download Cv</a>
 
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-
-            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
-
-<h1 class="text-3xl text-blue-500">Welcome to About Us Page</h1>
-</body>
-</html>
+@endsection
