@@ -19,17 +19,17 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mx-lg-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item {{ Request::path() == '/' ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ Request::path() == 'about' ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('about') }}">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ Request::path() == 'service' ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('service') }}">Services</a>
                     </li>
 
-                    <li class="nav-item mr-lg-5">
+                    <li class="nav-item mr-lg-5 {{ Request::path() == 'contact' ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('contact') }}">Contact</a>
                     </li>
                     <!--//search-right-->
