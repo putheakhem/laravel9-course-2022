@@ -14,4 +14,9 @@ class ServiceController extends Controller
             'services' => $services,
         ]);
     }
+
+
+    public function create() {
+        return view('services.create');
+    }
 }
